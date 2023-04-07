@@ -1,4 +1,4 @@
-# UReCA-Code-Readability-New
+# URECA-Code-Readability-New
 
 This repository contains the necessary files to train a logistic regression model for code readability assessment and implement a feedback tool based on the trained model.
 
