@@ -20,4 +20,4 @@ To get started with this project, clone the repository and install the necessary
 
 ## References
 
-Dataset acquired from S. Scalabrino, M. Linares-Vásquez, R. Oliveto, and D. Poshyvanyk, “A comprehensive model for code readability,” J. Softw. Evol. Process, vol. 30, no. 6, p. e1958, 2018, doi: 10.1002/smr.1958.![image](https://user-images.githubusercontent.com/52364313/230533173-082e09d4-d41a-4338-aab9-34e83f8b40ab.png)
+Dataset acquired from S. Scalabrino, M. Linares-Vásquez, R. Oliveto, and D. Poshyvanyk, “A comprehensive model for code readability,” J. Softw. Evol. Process, vol. 30, no. 6, p. e1958, 2018, doi: 10.1002/smr.1958.
