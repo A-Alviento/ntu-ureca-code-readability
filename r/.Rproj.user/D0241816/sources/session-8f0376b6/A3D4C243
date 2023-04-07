@@ -1,0 +1,27 @@
+{
+    "id": "A3D4C243",
+    "path": "~/Desktop/cs-projects/ureca-code-readability-new/r/data-to-df.R",
+    "project_path": "data-to-df.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1676605816963.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "87,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1679727502,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1679727502579,
+    "read_only": false,
+    "read_only_alternatives": []
+}

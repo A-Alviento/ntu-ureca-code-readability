@@ -1,0 +1,32 @@
+library(dplyr)
+library(class)
+library(mlbench)
+
+data("BreastCancer", package = "mlbench")
+# remove NA
+bc = BreastCancer[complete.cases(BreastCancer),]
+head(bc)
+
+bc[,2:4] = sapply(bc[,2:4], as.numeric)
+head(bc)
+bc<-bc%>%mutate(y=factor(ifelse(Class=="malignant", 1,0)))%>%select(Cl.thickness:Cell.shape, y)
+
+# normalise numeric variables
+nor = function(x) {
+  (x-min(x))/max(x)-min(x)
+}
+bc[,1:3] = sapply(bc[,1:3], nor)
+head(bc)
+
+#split data
+set.seed(100)
+training.idx = sample(1: nrow(bc), size=nrow(bc)*0.8)
+train.data = bc[training.idx, ]
+test.data = bc[-training.idx, ]
+
+# knn classificaiton
+knn1 = knn(train.data[,1:3], test.data[,1:3], cl=train.data$y, k=2)
+mean(knn1 == test.data$y)
+
+table(knn1, test.data$y)
+

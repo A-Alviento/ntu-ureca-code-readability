@@ -1,0 +1,19 @@
+// This class represents a simple example of a Person.
+public class Person {
+
+	// declares variable for name and age
+    private String name;
+    private int age;
+
+    // Constructor for Person class
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Returns the person's name.
+    public String getName() {
+        return name;
+    }
+
+}
