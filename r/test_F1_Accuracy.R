@@ -32,7 +32,7 @@ ownFeaturesDF_isReadable = na.omit(ownFeaturesDF_isReadable)
 
 # function to train a model on a specific seed
 f2 <- function(x, z) {
-  set.seed(x)
+  set.seed(101)
   
   # split dataset into training and testing sets
   training.idx = sample(1: nrow(ownFeaturesDF_isReadable), nrow(ownFeaturesDF_isReadable)*0.8)
@@ -56,6 +56,10 @@ f2 <- function(x, z) {
   confusion_mat <- confusionMatrix(predictions, test.data$Readable, mode = "everything", positive="1")
   roc_obj <- roc(as.numeric(test.data$Readable)-1, as.numeric(predictions), levels = c("0", "1"))
   auc <- auc(roc_obj)
+  
+  
+  confusion_mat$overall['Accuracy']
+  confusion_mat$byClass['F1']
   
   #return (as.data.frame(final_model$finalModel["coefficients"]))
   return (c(confusion_mat$overall['Accuracy'], confusion_mat$byClass['F1'], as.numeric(auc)))
