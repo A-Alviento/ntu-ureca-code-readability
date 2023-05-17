@@ -66,9 +66,3 @@ streamlit run streamlit_deploy.py
 This project uses a dataset from the following paper:
 
 S. Scalabrino, M. Linares-Vásquez, R. Oliveto, and D. Poshyvanyk, “A comprehensive model for code readability,” J. Softw. Evol. Process, vol. 30, no. 6, p. e1958, 2018, doi: 10.1002/smr.1958.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-Please feel free to customize this README to fit the specifics of your project.
