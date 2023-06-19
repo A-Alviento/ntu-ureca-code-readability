@@ -1,9 +1,4 @@
-from feedback_tool_helper_functions import count_source_lines_chars_helper
-from feedback_tool_helper_functions import identifiers_helper
-from feedback_tool_helper_functions import calculate_comment
-from feedback_tool_helper_functions import count_blocks
-from feedback_tool_helper_functions import average_readability_helper
-from feedback_tool_helper_functions import log_reg_eqn
+from feedback_tool_helper_functions import *
 
 # Extracts the readability features of a code snippet
 # a = "numLines", b = "avgCharsLine", c = "ratioComment", d = "ratioBlank", 

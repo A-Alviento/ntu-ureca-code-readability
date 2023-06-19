@@ -20,16 +20,16 @@ This project is designed to assess the readability of code using machine learnin
 
 Before getting started, you'll need to install the following Python packages. You can do this by running `pip install <package-name>` for each one:
 
-- re
-- math
-- tokenize
-- io
-- keyword
 - spacy
-- spellchecker
-- os
-- csv
+- pyspellchecker
 - streamlit
+- indexer
+
+Next, download `en_core_web_sm` model in the Natural Language Processing library, spaCy by running:
+
+```
+python -m spacy download en_core_web_sm
+```
 
 ### Running the Project
 

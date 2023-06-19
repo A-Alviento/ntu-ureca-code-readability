@@ -1,7 +1,7 @@
 import streamlit as st
 import sys
 import io
-from feedback_tool import code_feedback  # Import your model function
+from feedback_tool import code_feedback
 
 # Set the page config to have a wider layout and a nice title.
 st.set_page_config(layout="wide", page_title="Code Readability Feedback Tool", page_icon=":eyeglasses:")
